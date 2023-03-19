@@ -5,10 +5,10 @@ class Nhanvien {
     protected long luong;
     protected int NV_SEP = 0;
 	protected int NV_LINH = 1;
-	protected long LUONG_NV_FULLTIME_SEP = 10000;
-	protected long LUONG_NV_FULLTIME_LINH = 8000;
-	protected long LUONG_LAMTHEM_MOINGAY =7000;
-	protected long LUONG_NV_PARTTIME_MOIGIO =1000;
+	protected long LUONG_NV_FULLTIME_SEP ;
+	protected long LUONG_NV_FULLTIME_LINH ;
+	protected long LUONG_LAMTHEM_MOINGAY;
+	protected long LUONG_NV_PARTTIME_MOIGIO ;
     public Nhanvien(){
         this.ten = ten;
         this.luong = luong;
@@ -79,12 +79,12 @@ class nhanVienparttime extends Nhanvien{
 class mainNhanVien{
     public static void main(String[] args) {
     Nhanvien NV = new Nhanvien();
-    nhanVienfulltime FT = new nhanVienfulltime("da",1,15);
+    nhanVienfulltime FT = new nhanVienfulltime();
     FT.xuatThongtin();
     System.out.println(FT.toString());
     FT.tinhLuong();
     System.out.println("============================================================");
-    nhanVienparttime PT = new nhanVienparttime("aa", 3);
+    nhanVienparttime PT = new nhanVienparttime();
     PT.xuatThongtin();
     System.out.println(PT.toString());
     PT.tinhLuong();

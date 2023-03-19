@@ -3,8 +3,8 @@ import java.util.concurrent.Flow.Subscriber;
 class Nhanvien {
     protected String ten;
     protected long luong;
-    protected int NV_SEP = 0;
-	protected int NV_LINH = 1;
+    protected int NV_SEP ;
+	protected int NV_LINH ;
 	protected long LUONG_NV_FULLTIME_SEP ;
 	protected long LUONG_NV_FULLTIME_LINH ;
 	protected long LUONG_LAMTHEM_MOINGAY;
